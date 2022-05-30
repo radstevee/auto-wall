@@ -1,0 +1,33 @@
+{
+    "location": {
+        "lat": 12.3456,
+        "long": 12.3456
+    },
+    "weatherAPIKey": "API_KEY",
+    "units": "metric",
+    "wallpaper": "~/Pictures/foo.png",
+    "wallpaperSize": [1920, 1080],
+    "wallpaperOut": "~/Pictures/auto_wall_out",
+    "outFormat": "png",
+    "cpuRamInterval": 4000,
+    "weatherInterval": 120000,
+    "font": "JetBrains Mono",
+    "fontSize": 24,
+    "fontColors": {
+        "cpu": "#cba6f7",
+        "cpu_usage": "#f5c2e7",
+        "ram": "#fab387",
+        "ram_usage": "#f9e2af",
+        "weather": "#a6e3a1",
+        "weather_temp": "#94e2d5",
+        "weather_description": "#89dceb",
+        "time": "#89b4fa"
+    },
+    "fontAlign": "center",
+    "coordinates": {
+        "cpu": [150, 150],
+        "ram": [150, 200],
+        "weather": [180, 250],
+        "time": [238, 350]
+    }
+}
