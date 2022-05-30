@@ -1,0 +1,19 @@
+{
+  "name": "auto-wall",
+  "version": "1.0.0",
+  "description": "Automatically change your wallpaper with local time, CPU/RAM usage and weather",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "linux",
+    "wallpaper"
+  ],
+  "author": "radsteve.sh",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.21",
+    "node-fetch": "^2.6.3"
+  }
+}
