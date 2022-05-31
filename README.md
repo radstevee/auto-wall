@@ -26,3 +26,4 @@ node .
 ```
 
 NOTE: this currently only works on linux (and maybe macos)
+NOTE: please provide the full path (NOT `~/Pictures/foo.png`, BUT `/home/foo/Pictures/foo.png`)
