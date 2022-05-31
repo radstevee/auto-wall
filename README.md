@@ -18,3 +18,11 @@ npm install
 and, that's it! you still need to configure it tho...
 
 there is an example config.json
+
+# running
+
+```bash
+node .
+```
+
+NOTE: this currently only works on linux (and maybe macos)

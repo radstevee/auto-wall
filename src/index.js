@@ -27,6 +27,7 @@ async function drawWallpaper(weather, cpuRam) {
     const background = new Canvas.Image();
     background.src = backgroundFile;
     let tempUnits;
+    let minutes;
 
     //stretch image on the canvas
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
@@ -36,7 +37,9 @@ async function drawWallpaper(weather, cpuRam) {
     /* draw local time */
     ctx.fillStyle = cfg.fontColors.time;
     const date = new Date();
-    const dateParsed = `${date.getHours()}:${date.getMinutes()}, ${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}`;
+    if(date.getMinutes().length == 1) minutes = date.getMinutes() + "0";
+    else minutes = date.getMinutes();
+    const dateParsed = `${date.getHours()}:${minutes}, ${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}`;
     ctx.fillText(dateParsed, cfg.coordinates.time[0], cfg.coordinates.time[1]);
 
     /* draw the cpu and ram usage */
@@ -91,6 +94,10 @@ async function main() {
         const cpu_ram = await Cpu_Ram();
         drawWallpaper(weather, cpu_ram)
     }, cfg.cpuRamInterval);
+
+    setInterval(async () => {
+        drawWallpaper(weather, cpuRam);
+    }, 10000);
 }
 
 main();
