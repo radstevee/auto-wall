@@ -7,6 +7,8 @@ Clone the repo
 
 ```bash
 git clone https://github.com/radstevee/auto-wall.git
+
+cd auto-wall
 ```
 
 install the dependencies
@@ -26,4 +28,5 @@ node .
 ```
 
 NOTE: this currently only works on linux (and maybe macos)
-NOTE: please provide the full path (NOT `~/Pictures/foo.png`, BUT `/home/foo/Pictures/foo.png`)
+
+Also please provide the full path (NOT `~/Pictures/foo.png`, BUT `/home/foo/Pictures/bar.png`)
