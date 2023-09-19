@@ -1,3 +1,6 @@
+# Archivation notice
+This repo is archived since it is ***really*** inefficient (50% ram usage lol) and there are way better alternatives like conky.
+
 # auto-wall
 Automatically change your wallpaper with local time, CPU/RAM usage and weather
 
